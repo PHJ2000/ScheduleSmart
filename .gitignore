@@ -18,6 +18,12 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+.AppleDouble
+.LSOverride
+Icon?
+._*
+ehthumbs.db
+Desktop.ini
 
 # 로그 및 기타
 *.log
