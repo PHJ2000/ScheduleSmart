@@ -6,6 +6,7 @@ router = APIRouter(prefix="/api/v1/user", tags=["User"])
 
 @router.get("/me", response_model=UserProfile)
 async def get_me(current_user: UserProfile = Depends(get_current_user)):
+    print("Authorization Header:", request.headers.get("authorization"))
     return current_user
 
 @router.patch("/me", response_model=UpdateUserProfileResponse)

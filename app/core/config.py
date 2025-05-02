@@ -2,8 +2,8 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     PROJECT_NAME: str = "ScheduleSmart"
-    SECRET_KEY: str = "your-secret-key"  # TODO: .env로 옮길 것
-    ALGORITHM: str = "HS256"
+    SECRET_KEY: str
+    ALGORITHM: str
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24
 
     GOOGLE_CLIENT_ID: str = "your-google-client-id"
